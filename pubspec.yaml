@@ -1,0 +1,33 @@
+name: native_crash
+description: Flutter plugin to simulate native crash. By calling crash it will crash the app.
+version: 1.1.2
+homepage: https://github.com/kishormainali/native_crash
+repository: https://github.com/kishormainali/native_crash
+topics:
+  - crash
+  - native-crash
+  - check-root-status
+  - check-jailbreak-status
+  - runtime-crash
+
+platforms:
+  android:
+  ios:
+
+environment:
+  sdk: ">=3.1.5"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+  
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.kishormainali.native_crash
+        pluginClass: NativeCrashPlugin
+      ios:
+        pluginClass: NativeCrashPlugin
+
